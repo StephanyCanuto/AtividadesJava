@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -78,8 +80,90 @@ public class Main {
             System.out.println("O número " + num + " é ímpar.");
         }
 
-        
+        System.out.println("____________________________________________________________ \n");
+        //Somando dois números
+        int numero01 = 5;
+        int numero02 = 7;
+        int soma = numero01 + numero02;
 
+        System.out.println("A soma é: " + soma);
+
+        System.out.println("____________________________________________________________ \n");
+        //Declarando várias variáveis
+
+        int idadeP = 25;
+        double alturaP = 1.75;
+        char inicial = 'S';
+        boolean estudante = true;
+
+        System.out.println("Sua idade é " + idadeP);
+        System.out.println("Sua altura é " + alturaP);
+        System.out.println("A inicial do seu nome é '" + inicial + "'");
+        System.out.println("Você é estudante? " + estudante);
+
+
+        System.out.println("____________________________________________________________ \n");
+        //Atividade 1: Pré-incremento e Pós-incremento
+
+        int a = 5;
+        int b = a++;
+        int c = ++a;
+
+        System.out.println("Valor de a: " + a);
+        System.out.println("Valor de b: " + b);
+        System.out.println("Valor de c: " + c);
+
+
+        System.out.println("____________________________________________________________ \n");
+        //Atividade 3: Operadores Abreviados
+        int valor = 20;
+        valor = valor + 5;
+        valor = valor * 2;
+        valor = valor - 3;
+        valor = valor / 2;
+        valor = valor % 4;
+        System.out.println("Resultado final: " + valor);
+
+
+        System.out.println("____________________________________________________________ \n");
+        //Ordem de operações matemáticas
+
+        int senai1 = 10;
+        int senai2 = 20;
+
+        //exemplo da forma errada
+        System.out.println("O valor da soma é: "+ senai1 + senai2);
+
+        //exemplo da forma correta
+        System.out.println("O valor da soma é: "+ (senai1 + senai2));
+
+
+        System.out.println("____________________________________________________________ \n");
+        //Usando Sequência de escape
+        System.out.println("meu nome é \"Stephany\"\nEu tenho 20 anos");
+
+
+
+        System.out.println("____________________________________________________________ \n");
+        //Convertendo tipos
+        int myInt;
+        double myPercent = 51.9;
+        myInt = (int)myPercent; // O número é "cortado"
+        System.out.println(myInt);
+        // myInt é 51
+
+
+
+        System.out.println("____________________________________________________________ \n");
+        //idade
+        int ageYears = 20;
+        int ageDays = ageYears * 365;
+        long ageSeconds = ageYears * 365 * 24L * 60 * 60;
+        System.out.println("Você já tem " + ageDays
+                + " dias de idade.");
+
+        System.out.println("Você já tem " + ageSeconds
+                + " segundos de idade.");
 
     }
 
